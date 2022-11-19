@@ -1,0 +1,131 @@
+.img-indicador {
+    max-width: 100%;
+}
+
+.first-section {
+    margin-top: 6.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.first-section__title {
+    font-size: 3.75rem;
+}
+
+.first-section__subtitle {
+    font-size: 1.0625rem;
+}
+
+.first-section__logo {
+    margin-top: -30px;
+}
+
+.contact-button {
+    color: #945a01;
+}
+
+.second-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 580px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    padding-bottom: 32px;
+}
+
+.second-section-circle {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    text-align: center;
+}
+
+.second-section-circle_imgdiv {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.second-section-circle_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.second-section-circle__clients {
+    position: absolute;
+    background-color: black; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    min-height: 110px;
+    width: 180px;
+    z-index: 1;
+}
+
+.second-section-circle__avaliations {
+    position: absolute;
+    background-color: black;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    top: 65%;
+    left: 0;
+    transform: translateY(-50%, -50%);
+    min-height: 110px;
+    width: 140px;
+    z-index: 1;
+}
+
+.second-section-circle__projects {
+    position: absolute;
+    background-color: black; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+    right: 0;
+    top: 65%;
+    transform: translateY(-50%, -50%);
+    min-height: 110px;
+    width: 150px;
+    z-index: 1;
+}
+
+.second-section-content {
+    width: 531px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .second-section-content {
+        width: 100%;
+    }
+}
+
+
+.section-four {
+    min-height: 740px; 
+    padding-top: 40px;
+    max-width: 900px;
+}
+
+.section-four-card {
+
+}
+
+.section-four-title {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .section-four {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-four {
+        max-width: 500px;
+    }
+}
+

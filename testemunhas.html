@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Bootstrap 4 Testimonial Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
+body {
+    font-family: 'Mulish', sans-serif;
+    
+}
+#customers-testimonials .item {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 90px;
+    margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #4280bd;
+    transform: translate3d(0px, -50%, 0px) scale(0.6);
+}
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    outline: none;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #fff;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+    border-radius: 100%;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-lg p-4 bg-white rounded">
+                <img src="./assets/img/servian.jpg" alt="">
+                <h5 class="pb-2 pt-3">Rafael Servian (Binary Win)</h5>
+                <p id="feedback-01" class="mb-0 text-muted">O Sávio é um dos programadores mais talentosos que já tive o prazer de conhecer, extremamente pontual e de muita ética. O cara é fora de série, muito criativo e revolucionário em seus desenvolvimentos.</p>
+              </div>             
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-lg p-4 bg-white rounded">
+                <img  src="./assets/img/fenrir.jpg" alt="">
+                <h5 class="pb-2 pt-3">Elcio Silva (Gran Fenrir)</h5>
+                <p id="feedback-02" class="mb-0 text-muted">Jam Sávio é um ótimo profissional como programador e como ser humano. Dono de uma postura ética confiável e honesta. Já trabalho com ele há algum tempo e não tenho doque reclamar. Programador daqueles que, se não existe, ele vai lá e cria.</p>
+              </div>
+             
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-lg p-4 bg-white rounded">
+                <img src="./assets/img/gabriel.jpg" alt="">
+                <h5 class="pb-2 pt-3">Gabriel (Osiris)</h5>
+                <p id="feedback-03" class="mb-0 text-muted">O Sávio é bem inovador, tudo que ele faz é bem exclusivo e único. A maioria dos projetos são fora da curva e bem organizados.</p>
+              </div>
+             
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-lg p-4 bg-white rounded">
+                <img  src="./assets/img/matheus.jpg" alt="">
+                <h5 class="pb-2 pt-3">Matheus Teixeira</h5>
+                <p id="feedback-04" class="mb-0 text-muted">Bom, iniciei um projeto com o Sávio e ele foi muito atencioso e entendeu rápido as minhas ideias. Qualquer erro que acontecia com o bot, algum bug, na hora ele resolvia. Bem rápido mesmo. O Sávio é um excelente profissional. Estou satisfeito e pronto para os próximos projetos. Recomendo, não vão se arrepender!</p>
+              </div>
+              
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="./assets/js/language_feedbacks.js" type="text/javascript"></script>	
+  <!-- END OF TESTIMONIALS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+  jQuery(document).ready(function($) {
+                "use strict";
+                //  TESTIMONIALS CAROUSEL HOOK
+                $('#customers-testimonials').owlCarousel({
+                    loop: true,
+                    center: true,
+                    items: 3,
+                    margin: 0,
+                    autoplay: true,
+                    dots:true,
+                    autoplayTimeout: 10000,
+                    smartSpeed: 450,
+                    responsive: {
+                      0: {
+                        items: 1
+                      },
+                      768: {
+                        items: 2
+                      },
+                      1170: {
+                        items: 3
+                      }
+                    }
+                });
+            });
+  </script>
+</body>
+</html>
