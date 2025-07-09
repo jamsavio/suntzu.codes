@@ -93,7 +93,7 @@ if(userLang.indexOf("pt-")==-1 && userLang.indexOf("es-")==-1){
 	///////////////////////////////////////
 	//Floating Contact Section
 	document.getElementById("flutuante-contato").textContent="Contact Us";
-	document.getElementById("texto01-contato").textContent="Hello, I'm Savio 👋.";
+	document.getElementById("texto01-contato").textContent="Hello, I'm <b>Savio</b> 👋!";
 	document.getElementById("texto01-02-contato").textContent=" I'm";
 	document.getElementById("texto01-03-contato").textContent="here to assist you.";
 	document.getElementById("texto02-contato").textContent="Please choose one of the options below:";
